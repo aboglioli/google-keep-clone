@@ -11,6 +11,7 @@
     "test": "npm run unit"
   },
   "dependencies": {
+    "firebase": "^3.6.9",
     "vue": "^2.1.10"
   },
   "devDependencies": {
