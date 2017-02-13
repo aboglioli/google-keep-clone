@@ -1,42 +1,22 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="note in notes">
-        <Note :note="note" />
-      </li>
-    </ul>
+    <Notes />
   </div>
 </template>
 
 <script>
-  import Note from './components/Note';
+  import Notes from './components/Notes';
 
   export default {
     name: 'app',
-    data() {
-      return {
-        notes: [
-          {title: 'Title', author: 'Admin', body: 'Descriptipn'},
-          {title: 'Title', author: 'Admin', body: 'Descriptipn'},
-          {title: 'Title', author: 'Admin', body: 'Descriptipn'},
-          {title: 'Title', author: 'Admin', body: 'Descriptipn'},
-          {title: 'Title', author: 'Admin', body: 'Descriptipn'}
-        ]
-      };
-    },
     components: {
-      Note
+      Notes
     }
   }
 </script>
 
 <style lang="scss">
   #app {
-    ul {
-      li {
-        list-style: none;
-        margin-right: 5px;
-      }
-    }
+    border: 1px solid red;
   }
 </style>
