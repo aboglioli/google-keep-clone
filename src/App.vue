@@ -17,6 +17,6 @@
 
 <style lang="scss">
   #app {
-    border: 1px solid red;
+
   }
 </style>
